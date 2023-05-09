@@ -7,5 +7,6 @@
     <color name="pink">#F8DBEA</color>
     <color name="light_blue">#DFF5FE</color>
     <color name="yellow">#FAF1B2</color>
+    <color name="rating_color">#FFCC01</color>
 
 </resources>

@@ -26,7 +26,7 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/electronics" />
+            app:srcCompat="@drawable/electronics_icon" />
 
         <TextView
             android:id="@+id/text_category_name"

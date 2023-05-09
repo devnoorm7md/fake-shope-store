@@ -14,7 +14,7 @@
     <item
         android:id="@+id/navigation_cart"
         android:enabled="true"
-        android:icon="@drawable/add_to_cart"
+        android:icon="@drawable/add_to_cart_icon"
         android:title="@string/cart" />
     <item
         android:id="@+id/navigation_favourite"

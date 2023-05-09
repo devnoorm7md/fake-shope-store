@@ -8,4 +8,7 @@
     <string name="favourite">Favourite</string>
     <string name="cart">Cart</string>
     <string name="app_bar_text">What item are you\nlooking for?</string>
+    <string name="empty_search_result">empty search result</string>
+    <string name="empty_list">Your Search List is Empty</string>
+    <string name="description">Explore clothes and add them\nto Search to show them here.</string>
 </resources>

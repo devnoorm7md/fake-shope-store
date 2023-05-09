@@ -29,10 +29,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/poppins_medium"
             android:maxLines="1"
             android:textColor="@color/grey"
-            android:textSize="18sp"
+            android:textSize="24sp"
+            android:textAllCaps="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_product_details_card"
             tool:text="Mens Cotton Jacket" />
@@ -43,7 +44,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="22sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_product_details_title"
             tool:text="$3.00" />
@@ -54,12 +55,26 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:fontFamily="@font/poppins_regular"
-            android:maxLines="1"
+            android:maxLines="3"
             android:textColor="@color/grey"
-            android:textSize="18sp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_product_details_price"
+            tool:text="@string/product_description" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_details"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/rating_color"
+            android:rating="3"
+            app:layout_constraintBottom_toTopOf="@+id/text_product_details_description"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_product_details_card"
-            tool:text="Mens Cotton Jacket" />
+            app:layout_constraintVertical_bias="1.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

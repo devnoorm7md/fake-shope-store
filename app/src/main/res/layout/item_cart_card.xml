@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:strokeWidth="0dp"
-    android:backgroundTint="@color/white"
+    android:backgroundTint="@color/light_blue"
     android:layout_margin="@dimen/margin_small">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -22,7 +22,7 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/men_jacket" />
+            app:srcCompat="@drawable/man_jacket" />
 
         <TextView
             android:id="@+id/text_cart_card_title"

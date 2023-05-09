@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/card_product"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_margin="@dimen/margin_small"
-    android:elevation="0dp"
-    app:strokeWidth="0dp"
+    android:elevation="2dp"
+    app:strokeWidth="1dp"
     android:backgroundTint="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -22,7 +22,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/men_jacket" />
+            app:srcCompat="@drawable/man_jacket"
+            android:background="@color/light_blue"/>
 
         <ImageView
             android:id="@+id/icon__details_favourite"
@@ -58,6 +59,7 @@
             android:textColor="@color/grey"
             android:textSize="24sp"
             android:textAllCaps="true"
+            android:layout_marginStart="@dimen/margin_small"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_product_details_card"
             tool:text="Mens Cotton Jacket" />
@@ -69,6 +71,7 @@
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/black"
             android:textSize="22sp"
+            android:layout_marginStart="@dimen/margin_small"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_product_details_title"
             tool:text="$3.00" />
@@ -82,6 +85,8 @@
             android:maxLines="3"
             android:textColor="@color/grey"
             android:textSize="16sp"
+            android:layout_marginStart="@dimen/margin_small"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +100,7 @@
             android:layout_height="wrap_content"
             android:progressTint="@color/rating_color"
             android:rating="3"
+            android:layout_marginEnd="@dimen/margin_small"
             app:layout_constraintBottom_toTopOf="@+id/text_product_details_description"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_product_details_card"

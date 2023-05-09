@@ -9,7 +9,7 @@
     android:layout_margin="@dimen/margin_small"
     android:elevation="0dp"
     app:strokeWidth="0dp"
-    android:backgroundTint="@color/white">
+    android:backgroundTint="@color/pink">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,10 +19,11 @@
             android:id="@+id/image_product_card"
             android:layout_width="match_parent"
             android:layout_height="300dp"
+            android:layout_marginTop="@dimen/margin_small"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/men_jacket" />
+            app:srcCompat="@drawable/man_jacket" />
 
         <ImageView
             android:id="@+id/icon_product_favourite"
@@ -55,6 +56,7 @@
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/black"
             android:textSize="22sp"
+            android:layout_marginStart="@dimen/margin_small"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_product_card"
             tool:text="$3.00" />
@@ -69,6 +71,7 @@
             android:textColor="@color/grey"
             android:textSize="20sp"
             android:textAllCaps="true"
+            android:layout_marginStart="@dimen/margin_small"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_product_card_price"
@@ -81,6 +84,7 @@
             android:layout_height="wrap_content"
             android:progressTint="@color/rating_color"
             android:rating="3"
+            android:layout_marginStart="@dimen/margin_small"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_product_card_title"

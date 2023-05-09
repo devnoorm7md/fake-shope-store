@@ -6,4 +6,24 @@
     </style>
 
     <style name="Theme.FakeShopeStore" parent="Base.Theme.FakeShopeStore" />
+
+    <style name="Widget.Material3.BottomNavigationView.style" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/purple</item>
+        <item name="android:background">@color/primary</item>
+        <item name="itemTextColor">@drawable/navigation_item_text_color</item>
+        <item name="itemIconTint">@drawable/navigation_item_color</item>
+        <item name="itemActiveIndicatorStyle">@style/App.Custom.Indicator</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/purple</item>
+    </style>
+
+    <style name="HomeToolBarTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/poppins_black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lines">2</item>
+    </style>
+
+
 </resources>

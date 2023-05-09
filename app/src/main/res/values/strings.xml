@@ -7,4 +7,5 @@
     <string name="search">Search</string>
     <string name="favourite">Favourite</string>
     <string name="cart">Cart</string>
+    <string name="app_bar_text">What item are you\nlooking for?</string>
 </resources>

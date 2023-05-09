@@ -11,4 +11,6 @@
     <string name="empty_search_result">empty search result</string>
     <string name="empty_list">Your Search List is Empty</string>
     <string name="description">Explore clothes and add them\nto Search to show them here.</string>
+    <string name="search_hint">Search</string>
+    <string name="filter">filter</string>
 </resources>

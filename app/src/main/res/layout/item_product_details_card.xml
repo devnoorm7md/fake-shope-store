@@ -24,6 +24,30 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/men_jacket" />
 
+        <ImageView
+            android:id="@+id/icon__details_favourite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:contentDescription="@string/favourite_icon"
+            android:src="@drawable/favorite_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_add_to_cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/add_to_cart"
+            android:contentDescription="@string/add_to_cart_icon" />
+
         <TextView
             android:id="@+id/text_product_details_title"
             android:layout_width="0dp"
@@ -39,7 +63,7 @@
             tool:text="Mens Cotton Jacket" />
 
         <TextView
-            android:id="@+id/text_product_details_price"
+            android:id="@+id/text_cart_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
@@ -61,7 +85,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_product_details_price"
+            app:layout_constraintTop_toBottomOf="@+id/text_cart_price"
             tool:text="@string/product_description" />
 
         <RatingBar

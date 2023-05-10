@@ -7,8 +7,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_margin="@dimen/margin_small"
-    android:elevation="2dp"
-    app:strokeWidth="1dp"
+    android:elevation="0dp"
+    app:strokeWidth="0dp"
     android:backgroundTint="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout

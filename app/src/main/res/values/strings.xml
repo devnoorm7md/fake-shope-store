@@ -16,4 +16,8 @@
     <string name="empty_favourite_result">empty favourite result</string>
     <string name="empty_favourite_list">Your Favourites List is Empty</string>
     <string name="text_favourite_description">Explore food dishes and add them \n to favorite to show them here.</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="reviews">Reviews</string>
+    <string name="review_content">I love this product so much, it is seems like the picture, I did not regert to buy another one</string>
+    <string name="noor_mohammed">Noor Mohammed</string>
 </resources>

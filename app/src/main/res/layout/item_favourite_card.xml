@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/image_cart_card"
+            android:id="@+id/image_favourite_cart_card"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:scaleType="centerCrop"
@@ -26,7 +26,7 @@
             app:srcCompat="@drawable/man_jacket" />
 
         <TextView
-            android:id="@+id/text_cart_card_title"
+            android:id="@+id/text_favourite_card_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_small"
@@ -39,12 +39,12 @@
             android:textColor="@color/grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/image_cart_card"
+            app:layout_constraintStart_toEndOf="@+id/image_favourite_cart_card"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Mens Cotton Jacket" />
 
         <TextView
-            android:id="@+id/text_cart_price"
+            android:id="@+id/text_favourite_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_small"
@@ -52,20 +52,34 @@
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/image_cart_card"
-            app:layout_constraintTop_toBottomOf="@+id/text_cart_card_title"
+            app:layout_constraintStart_toEndOf="@+id/image_favourite_cart_card"
+            app:layout_constraintTop_toBottomOf="@+id/text_favourite_card_title"
             tools:text="$3.00" />
 
         <ImageView
-            android:id="@+id/icon_cart_favourite"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginEnd="@dimen/margin_normal"
+            android:id="@+id/icon_favourite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/favourite_icon"
             android:src="@drawable/favorite_icon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_add_to_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_background"
+            android:padding="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/favourite_icon" />
+            app:srcCompat="@drawable/add_to_cart_icon"
+            android:contentDescription="@string/add_to_cart_icon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

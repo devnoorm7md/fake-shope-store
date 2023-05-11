@@ -1,4 +1,4 @@
-package com.noor.fakeshopestore.domain.entities
+package com.noor.fakeshopestore.domain.entities.main
 
 
 import com.google.gson.annotations.SerializedName

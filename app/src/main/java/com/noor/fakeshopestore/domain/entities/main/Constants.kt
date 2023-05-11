@@ -1,4 +1,4 @@
-package com.noor.fakeshopestore.domain.entities
+package com.noor.fakeshopestore.domain.entities.main
 
 object Constants {
 

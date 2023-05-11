@@ -33,7 +33,7 @@ interface ShopApiService {
     fun getProductsByCategory(@Query("category") category: String): Single<Response<Product>>
 
     @GET("/carts")
-    fun getUserCartProducts(@Query("userId") userId: Int): Single<Response<List<Cart>>>
+    fun getUserCartProducts(@Query("userId") userId: Int): Single<Response<Cart>>
 
     @Multipart
     @POST("/products")

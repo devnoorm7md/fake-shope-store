@@ -1,7 +1,7 @@
 package com.noor.fakeshopestore.data.remote
 
-import com.noor.fakeshopestore.domain.entities.Cart
-import com.noor.fakeshopestore.domain.entities.Product
+import com.noor.fakeshopestore.domain.entities.main.Cart
+import com.noor.fakeshopestore.domain.entities.main.Product
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Single
 import okhttp3.MultipartBody
@@ -40,17 +40,13 @@ interface ShopApiService {
     @POST("/products")
     fun createProduct(@Part("product") product: RequestBody, @Part image: MultipartBody.Part): Single<Response<Product>>
 
-    @FormUrlEncoded
     @PUT("/products/{id}")
-    fun updateProduct(@Path("id") id: Int,@Body product: Product ): Single<Response<Product>>
-    @FormUrlEncoded
+    fun updateProduct(@Path("id") id: Int,@Body product: Product): Single<Response<Product>>
+
     @PATCH("/products/{id}")
-    fun updateCertainProductField(@Path("id") id: Int,@Body product: Product ): Single<Response<Product>>
+    fun updateCertainProductField(@Path("id") id: Int,@Body product: Product): Single<Response<Product>>
 
     @DELETE("/products/{id}")
     fun deleteProduct(@Path("id") id: Int): Completable
-
-
-
 
 }

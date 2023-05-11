@@ -1,4 +1,4 @@
-package com.noor.fakeshopestore.data
+package com.noor.fakeshopestore.data.remote
 
 import com.squareup.moshi.Moshi
 import okhttp3.OkHttpClient

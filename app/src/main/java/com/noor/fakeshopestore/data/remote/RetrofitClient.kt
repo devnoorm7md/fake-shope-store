@@ -22,4 +22,8 @@ object RetrofitClient {
             .build()
 
     }
+
+    val shopApiServices: ShopApiService by lazy {
+        retrofit.create(ShopApiService::class.java)
+    }
 }
